@@ -88,10 +88,15 @@
         <div class="video">
           <img class="video__img" src="https://via.placeholder.com/150x150" alt="">
           <div class="video-controls">
-            <input class="video-controls__video-length" type="range" name="" value="20">
-            <button class="video-controls__repeat" type="button" name="button"></button>
-            <button class="video-controls__subtitles" type="button" name="button"></button>
-            <button class="video-controls__fullscreen" type="button" name="button"></button>
+            <div class="video-controls__length">
+              <div class="video-controls__duration"></div>
+              <div class="video-controls__current"></div>
+            </div>
+            <div class="video-controls__buttons">
+              <button class="video-controls__repeat" type="button" name="button"></button>
+              <button class="video-controls__subtitles" type="button" name="button"></button>
+              <button class="video-controls__fullscreen" type="button" name="button"></button>
+            </div>
           </div>
         </div>
       </section>
