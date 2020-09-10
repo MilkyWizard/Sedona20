@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   background-color: #81b3d2;
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
@@ -11,11 +10,26 @@
 
 .main-navigation__list {
   list-style: none;
+  width: 320px;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.main-navigation__item {
+  display: flex;
+  justify-content: center;
 }
 
 .main-navigation__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.main-navigation__button_hide-menu {
+  position: absolute;
+  left: 287px;
+  top: 10px;
+  width: 22.2px;
+  height: 22.2px;
 }
