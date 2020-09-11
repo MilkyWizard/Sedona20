@@ -6,37 +6,37 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="photo-page">
     <nav class="main-navigation">
-      <ul class="main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="index.html">Главная</a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li>
-          <button class="main-menu__button main-menu__button_hide-menu" type="button"></button>
+          <button class="main-navigation__button main-navigation__button_hide-menu" type="button"></button>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="photo.html">Фото и видео</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="photo.html">Фото и видео</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">Форма отзыва</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
       </ul>
     </nav>
     <header class="page-header">
-      <img class="sedona-logo" src="https://via.placeholder.com/150x150" alt="Логотип Sedona">
+      <img class="page-header__logo sedona-logo" src="/img/logo-sedona-mobile.svg" alt="Логотип Sedona" width="101.7" height="84">
       <button class="page-header__button page-header__button_open-menu" type="button"></button>
     </header>
     <main class="page-main">
       <section class="simple-greeting">
-        <img class="simple-greeting__img" src="https://via.placeholder.com/150x150" alt="">
+        <img class="simple-greeting__img" src="/img/text-sedona.svg" alt="Sedona" width="229" height="39">
       </section>
       <section class="page-content">
         <h1 class="page-content__heading">Фото и видео</h1>
-          <p class="page-content__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам за быть о политике и экономике.</p>
+          <p class="page-content__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
         <ul class="photo-list">
           <li class="photo-list__item">
@@ -45,10 +45,12 @@
             </a>
             <h3 class="photo-list__heading">Неродные просторы</h3>
               <b class="photo-list__photografer">Автор фото: Борис</b>
-            <button class="photo-list__like-button" type="button">
-              <img  class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
-            </button>
-            <p class="photo-list__price">1350</p>
+
+            <p class="photo-list__price">
+              <button class="photo-list__like-button" type="button">
+                <img  class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
+              </button>1350
+          </p>
           </li>
           <li class="photo-list__item">
             <a class="photo-list__link" href="#">
@@ -56,10 +58,12 @@
             </a>
             <h3 class="photo-list__heading">Местная растительность</h3>
               <b class="photo-list__photografer">Автор фото: Сергей</b>
-              <button class="photo-list__like-button" type="button" name="button">
-                <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
-              </button>
-              <p class="photo-list__price">150</p>
+
+              <p class="photo-list__price">
+                <button class="photo-list__like-button" type="button" name="button">
+                  <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
+                </button>150
+              </p>
           </li>
           <li class="photo-list__item">
             <a class="photo-list__link" href="#"><img src="road-to-the-north" alt="">
@@ -67,10 +71,12 @@
             </a>
             <h3 class="photo-list__heading">Дорога на север</h3>
               <b class="photo-list__photografer">Автор фото: Сергей</b>
-              <button class="photo-list__like-button" type="button" name="button">
-                <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
-              </button>
-              <p class="photo-list__price">96</p>
+
+              <p class="photo-list__price">
+                <button class="photo-list__like-button" type="button" name="button">
+                  <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
+                </button>96
+              </p>
           </li>
           <li class="photo-list__item">
             <a class="photo-list__link" href="#">
@@ -78,29 +84,32 @@
             </a>
             <h3 class="photo-list__heading">Мост Дьявола</h3>
               <b class="photo-list__photografer">Автор фото: Антон</b>
-              <button class="photo-list__like-button" type="button" name="button">
-                <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
-              </button>
-              <p class="photo-list__price">254</p>
+
+              <p class="photo-list__price">
+                <button class="photo-list__like-button" type="button" name="button">
+                  <img class="photo-list__like-button" src="https://via.placeholder.com/150x150" alt="Лайк">
+                </button>254
+              </p>
           </li>
         </ul>
-
-        <h2 class="photo-list__heading">Все еще сомневаетесь?</h2>
-          <p class="photo-list__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video">
-          <img class="video__img" src="https://via.placeholder.com/150x150" alt="">
-          <div class="video-controls">
-            <div class="video-controls__length">
-              <div class="video-controls__duration"></div>
-              <div class="video-controls__current"></div>
-            </div>
-            <div class="video-controls__buttons">
-              <button class="video-controls__repeat" type="button" name="button"></button>
-              <button class="video-controls__subtitles" type="button" name="button"></button>
-              <button class="video-controls__fullscreen" type="button" name="button"></button>
+        <section class="presentation">
+          <h2 class="presentation__heading">Все еще сомневаетесь?</h2>
+            <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video">
+            <img class="video__img" src="https://via.placeholder.com/150x150" alt="">
+            <div class="video-controls">
+              <div class="video-controls__length">
+                <div class="video-controls__duration"></div>
+                <div class="video-controls__current"></div>
+              </div>
+              <div class="video-controls__buttons">
+                <button class="video-controls__repeat" type="button" name="button"></button>
+                <button class="video-controls__subtitles" type="button" name="button"></button>
+                <button class="video-controls__fullscreen" type="button" name="button"></button>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
     <footer class="page-footer">
@@ -111,7 +120,7 @@
         <li class="social-list__item"><a class="social-list__link social-list__link-youtube" href="#">Youtube</a></li>
       </ul>
       </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработаноo <img src="https://via.placeholder.com/150x150" alt="Логотип Html Academy"></a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
   </body>
 </html>
