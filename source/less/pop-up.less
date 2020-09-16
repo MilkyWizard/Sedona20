@@ -9,17 +9,31 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
+.pop-up_failure {
+  margin: 0 auto;
+  max-height: 347px;
+  position: absolute;
+  bottom: -1500px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
 .pop-up__title {
   background-color: #ffffff;
 }
 
 .pop-up__header {
+  text-align: center;
   margin: 35px 20px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .pop-up__text {
+  text-align: center;
   margin: 0;
   padding: 0 20px;
   padding-bottom: 35px;
@@ -30,6 +44,12 @@
 .pop-up__button-section {
   min-width: 320px;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+
+.pop-up__button-section_failure {
+  min-width: 347px;
   display: flex;
   justify-content: center;
 }
@@ -47,6 +67,12 @@
 
   .pop-up_success {
     width: 640px;
+    height: 347px;
+    margin: 0 auto;
+  }
+
+  .pop-up_failure {
+    width: 458px;
     height: 347px;
     margin: 0 auto;
   }
