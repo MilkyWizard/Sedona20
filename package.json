@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "deep-extend": "^0.6.0",
+    "merge": "^1.2.1"
   }
 }
