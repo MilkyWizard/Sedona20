@@ -1,35 +1,114 @@
 .main-navigation {
   padding: 0;
   margin: 0;
-  background-color: #81b3d2;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 40px;
-  outline: 1px solid spin(#81b3d2, 180);
-}
-
-.main-navigation__list {
-  list-style: none;
-  width: 320px;
-  padding: 0;
-  margin: 0;
   position: relative;
 }
 
-.main-navigation__item {
+.main-navigation img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation__list {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation__item:nth-child(1n) {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.main-navigation__item {
+  order: 100;
+  min-height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  background-color: #81b3d2;
 }
 
 .main-navigation__link {
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  line-height: 56px;
 }
 
-.main-navigation__button_hide-menu {
+.main-navigation__item_logo {
+  display: block;
+  height: 58px;
+  line-height: 0;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-navigation__button_closed {
   position: absolute;
-  left: 287px;
-  top: 10px;
-  width: 22.2px;
-  height: 22.2px;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: url("/img/icon-menu.svg") no-repeat 50% 50%;
+  background-size: 23px 22px;
+}
+
+.main-navigation__button {
+  background: url("/img/icon-cross.svg") no-repeat 50% 50%;
+  background-size: 23px 22px;
+}
+
+.main-navigation__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__list {
+    flex-direction: row;
+  }
+
+  .main-navigation__item {
+    background-color: #ffffff;
+    display: block;
+    width: 20%;
+    box-shadow: none;
+  }
+
+  .main-navigation__item:nth-child(1) {
+    order: 1;
+  }
+
+  .main-navigation__item:nth-child(2) {
+    order: 2;
+  }
+
+  .main-navigation__link {
+    color: #000000;
+  }
+
+  .main-navigation__item_logo {
+    order: 3;
+    height: 55px;
+  }
+
+  .main-navigation__button {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .main-navigation__logo {
+    width: 188px;
+    height: 96px;
+  }
 }

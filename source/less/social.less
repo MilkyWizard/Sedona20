@@ -1,16 +1,30 @@
 .social-list {
   margin: 0;
   padding: 0;
-  padding-left: 84px;
-  padding-right: 85px;
   list-style: none;
-  outline: 1px solid darkorange;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-list__item {
+  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .social-list__link {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
   color: #000000;
+  background-color: #81b3d2;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .social-list {
+    width: 33%;
+  }
 }
