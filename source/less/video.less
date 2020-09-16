@@ -1,0 +1,130 @@
+.video {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.video__screen {
+  min-height: 201px;
+  margin: 0;
+  padding: 0;
+  background-color: #cbe0a3;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: 320px 201px;
+}
+
+.video__controls {
+  min-height: 66px;
+  margin: 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.video__controls-length {
+  width: 280px;
+  min-height: 45px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video__controls-button {
+  width: 70px;
+  min-height: 66px;
+  padding: 0 10px;
+  line-height: 0;
+  background: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.video__controls-length::before {
+  right: 22px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 22px;
+  height: 4px;
+}
+
+.video__controls-length::after {
+  left: 50px;
+  width: 9px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.video__controls-length::after,
+.video__controls-length::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translate(0, -50%);
+}
+
+@media (min-width: 768px) {
+  .video {
+    width: 648px;
+  }
+
+  .video__screen {
+    min-height: 499px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 648px 499px;
+  }
+
+  .video__controls {
+    min-height: 93px;
+    margin: -93px 0 0;
+    position: static;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .video__controls-length {
+    position: relative;
+    top: 0;
+    flex-grow: 1;
+    width: auto;
+    background: 0 0;
+  }
+
+  .video__controls-length::before {
+    right: 35px;
+    left: 0;
+  }
+
+  .video__controls__button {
+    width: 90px;
+    min-height: 93px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video {
+    width: 800px;
+  }
+
+  .video__screen {
+    min-height: 500px;
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 800px 500px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .video__screen {
+    background-image: url("../img/video-tablet@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), (min-resolution: 2dppx) and (min-width: 1280px) {
+  .player__screen {
+    background-image: url("../img/video-desktop@2x.jpg");
+  }
+}

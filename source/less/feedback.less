@@ -1,19 +1,102 @@
 .feedback {
-  outline: 1px solid darkorange;
+  margin: 0 20px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.feedback__heading {
+.feedback__section {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  border: none;
+}
+
+.feedback__section-title {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 25px;
+  text-align: center;
 }
 
-.feedback__text {
-  margin: 0;
-  padding-top: 30px;
-  padding-right: 18px;
-  padding-left: 18px;
-  padding-bottom: 18px;
-  font-size: 14px;
-  line-height: 24px;
+.feedback__section-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__section-body_contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .feedback__section {
+    position: static;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .feedback__section-title {
+    padding: 30px 50px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .feedback__section-title_left {
+    margin: 0;
+    padding: 30px 0;
+    text-align: left;
+  }
+
+  .feedback__section:nth-child(1) {
+    order: 2;
+  }
+
+  .feedback__section:nth-child(2) {
+    order: 3;
+  }
+
+  .feedback__section:nth-child(3) {
+    order: 1;
+  }
+
+  .feedback__section:nth-child(4) {
+    order: 4;
+  }
+
+  .feedback__section:nth-child(5) {
+    order: 5;
+  }
+
+  .feedback__section:nth-child(6) {
+    order: 6;
+  }
+
+  .feedback__section:nth-child(1), .feedback__section:nth-child(3) {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feedback__section:nth-child(1), .feedback__section:nth-child(3), .feedback__section:nth-child(6) {
+    border-top: none;
+  }
+
+  .feedback__section:nth-child(2), .feedback__section:nth-child(4), .feedback__section:nth-child(5), .feedback__section:nth-child(6) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .feedback__section-body_contacts {
+    flex-direction: row;
+  }
 }

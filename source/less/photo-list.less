@@ -1,13 +1,151 @@
 .photo-list {
+  width: 100%;
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 21px;
   padding: 0;
-  list-style: none;
-}
-
-.photo-list__item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+}
+
+.photo-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-list__content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.photo-list__item {
+  padding: 23px 0;
+  font-size: 14px;
+  position: relative;
+}
+
+.photo-list__photo {
+  width: 280px;
+  height: 280px;
+  background-color: #aab7a5;
+  display: block;
+}
+
+.photo-list__text {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo-list__heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.photo-list__author {
+  text-transform: none;
+}
+
+.photo-list__likes-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-list__likes {
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo-list__likes-count {
+  height: 14px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  display: block;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .photo-list {
+    width: 648px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .photo-list__item {
+    position: static;
+    padding: 0;
+  }
+
+  .photo-list__photo {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-list__text {
+    min-height: 80px;
+    margin-top: 0;
+    flex-direction: row;
+    color: #333333;
+    background-color: #f2f2f2;
+  }
+
+  .photo-list__item:first-child .photo-list__photo {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo-list__description {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .photo-list__likes {
+    margin-top: 0;
+    width: 85px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photo-list {
+    width: auto;
+  }
+
+  .photo-list__photo {
+    width: 400px;
+  }
+
+  .photo-list__text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-list__heading {
+    color: #ffffff;
+  }
+
+  .photo-list__item:first-child .photo-list__photo {
+    width: 1200px;
+  }
+
+  .photo-list__likes-count {
+    color: #ffffff;
+  }
+
+  .photo-list__likes-icon {
+    fill: #ffffff;
+  }
 }
