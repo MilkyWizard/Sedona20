@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "deep-extend": "^0.6.0",
-    "merge": "^1.2.1"
+    "merge": "^2.1.1"
   }
 }
